@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desatando Nós - Imersão Transformadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Desatando Nós</div>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#fases">Fases</a></li>
+                <li><a href="#facilitadora">Facilitadora</a></li>
+                <li><a href="#inscricao" class="cta-button">Inscreva-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Desatando Nós</h1>
+                <p>Liberte-se das amarras do passado em uma imersão transformadora para pais e mães</p>
+                <a href="#inscricao" class="cta-button">Comece sua jornada</a>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre a Imersão</h2>
+            <p>Desatando Nós é uma experiência única de 4 horas projetada para ajudar pais e mães a se autoconhecerem, entenderem suas dores, traumas e anseios.</p>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>Data</h3>
+                    <p>07/12/2024</p>
+                </div>
+                <div class="card">
+                    <h3>Duração</h3>
+                    <p>4 horas</p>
+                </div>
+                <div class="card">
+                    <h3>Local</h3>
+                    <p>Online</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="fases">
+            <h2>As 3 Fases da Imersão</h2>
+            <div class="fases-container">
+                <div class="fase">
+                    <h3>1. Descobrindo as Amarras</h3>
+                    <p>Identificação dos nós e traumas da infância.</p>
+                </div>
+                <div class="fase">
+                    <h3>2. Desatando os Nós</h3>
+                    <p>Ressignificação dos traumas da infância.</p>
+                </div>
+                <div class="fase">
+                    <h3>3. Seguindo em Frente</h3>
+                    <p>Vivendo o presente sem o peso do passado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilitadora">
+            <h2>Conheça a Facilitadora</h2>
+            <div class="facilitadora-content">
+                <img src="rosangela-angelica.jpg" alt="Rosângela Angélica">
+                <div class="facilitadora-info">
+                    <h3>Rosângela Angélica</h3>
+                    <p>Rosângela Angélica é Terapeuta TRG Infantojuvenil/adulto, neuropsicopedagoga, educadora parental com 35 anos de profissão e mais de 1000 mil famílias atendidas.</p>
+                    <p>Ministra palestras e atendimentos clínicos através da metodologia que aborda práticas educacionais, fortalecendo o relacionamento familiar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscricao">
+            <h2>Garanta sua vaga</h2>
+            <form>
+                <input type="text" placeholder="Nome completo" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="tel" placeholder="Telefone" required>
+                <button type="submit" class="cta-button">Inscrever-se agora</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Desatando Nós. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Adicione isso antes do fechamento da tag </body> -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Fechar o menu ao clicar em um link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
